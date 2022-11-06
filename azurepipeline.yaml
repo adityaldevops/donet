@@ -10,8 +10,8 @@
   #name: adityaldevops/dotnet
   #type: github
 
-
-trigger: master
+trigger: 
+- master
 
 pool: adpool
 

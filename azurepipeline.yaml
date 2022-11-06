@@ -60,7 +60,7 @@ steps:
   inputs:
     PathtoPublish: '$(buildartifactstagingdirectory)'
     ArtifactName: 'drop'
-    publishLocation: 'Container'
+
 
 
 #- task: PublishCodeCoverageResults@1

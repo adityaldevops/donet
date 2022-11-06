@@ -4,6 +4,11 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 # adityalella
 
+resources:
+- repository: donet
+  type: github
+  endpoint:aditya
+
 trigger:
 - master
 

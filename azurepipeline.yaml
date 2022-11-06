@@ -16,7 +16,7 @@ resources:
 
   pipelines:
   - pipeline: dotnetpipeline # Name of the pipeline resource.
-    source: security-lib-ci # The name of the pipeline referenced by this pipeline resource.
+    source: adityaldevops.donet # The name of the pipeline referenced by this pipeline resource.
     trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
 
 trigger: 

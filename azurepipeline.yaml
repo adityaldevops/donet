@@ -14,6 +14,11 @@ resources:
     name: adityaldevops/donet
     endpoint: aditya
 
+  pipelines:
+  - pipeline: dotnetpipeline # Name of the pipeline resource.
+    source: security-lib-ci # The name of the pipeline referenced by this pipeline resource.
+    trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
+
 trigger: 
 - master
 
@@ -26,6 +31,10 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+
+- bash: echo "app-ci runs after security-lib-ci completes" 
+
+
 
 #- task: PublishCodeCoverageResults@1
   #inputs:

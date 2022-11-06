@@ -5,7 +5,7 @@
 # adityalella
 
 repositories:
-- repository: dotnet 
+- repository: adityaldevops/dotnet 
   endpoint: aditya 
   name: dotnet
   type: github

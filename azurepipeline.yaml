@@ -9,8 +9,7 @@ resources:
   type: github
   endpoint:aditya
 
-trigger:
-- master
+trigger: master
 
 pool: adpool
 

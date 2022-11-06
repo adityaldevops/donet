@@ -4,10 +4,12 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 # adityalella
 
-resources:
-- repository: donet
+repositories:
+- repository: dotnet 
+  endpoint: aditya 
+  name: dotnet
   type: github
-  endpoint: aditya
+  ref: string # ref name to checkout; defaults to 'refs/heads/main'. The branch checked out by default whenever the resource trigger fires. Does not accept variables.
 
 trigger: master
 

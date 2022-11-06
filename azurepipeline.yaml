@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-- adpool
+- name:adpool
 
 variables:
   buildConfiguration: 'Release'

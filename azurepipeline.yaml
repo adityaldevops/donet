@@ -9,7 +9,7 @@ resources:
   - repository: dotnet
     type: github
     endpoint: aditya
-
+    name: dotnet
 
 trigger: 
 - master

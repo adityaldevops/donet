@@ -50,6 +50,13 @@ steps:
     command: 'publish'
     publishWebProjects: true
 
+- task: CopyPublishBuildArtifacts@1
+  inputs:
+    CopyRoot: 'pipelines-dotnet-core.csproj'
+    Contents: '**'
+    ArtifactName: 'Drop'
+    ArtifactType: 'Container'
+
 
 #- task: PublishCodeCoverageResults@1
   #inputs:

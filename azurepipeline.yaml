@@ -56,6 +56,12 @@ steps:
     Contents: '**'
     TargetFolder: '$(buildartifactstagingdirectory)'
 
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(buildartifactstagingdirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+
 
 #- task: PublishCodeCoverageResults@1
   #inputs:

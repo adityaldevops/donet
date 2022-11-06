@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 # adityalella
 
-repositories:
+#repositories:
 - repository: dotnet 
   endpoint: aditya 
   name: adityaldevops/dotnet

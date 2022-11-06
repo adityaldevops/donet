@@ -9,7 +9,6 @@ repositories:
   endpoint: aditya 
   name: dotnet
   type: github
-  ref: string # ref name to checkout; defaults to 'refs/heads/main'. The branch checked out by default whenever the resource trigger fires. Does not accept variables.
 
 trigger: master
 

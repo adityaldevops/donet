@@ -32,7 +32,13 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
-- bash: echo "dotnetpipeline runs after adityaldevops.donet completes" 
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: 'pipelines-dotnet-core.csproj'
+    feedsToUse: 'select'
+    vstsFeed: 'bc5ece9b-ef8c-4dc2-af71-2a3b10f9d14e'
+    includeNuGetOrg: false
 
 
 

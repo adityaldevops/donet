@@ -4,11 +4,12 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 # adityalella
 
-#repositories:
-#- repository: dotnet 
-  #endpoint: aditya 
-  #name: adityaldevops/dotnet
-  #type: github
+resources:
+  repositories:
+  - repository: dotnet
+    type: github
+    endpoint: aditya
+    name: adityaldevops/dotnet
 
 trigger: 
 - master

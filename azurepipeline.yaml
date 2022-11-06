@@ -8,8 +8,8 @@ resources:
   repositories:
   - repository: dotnet
     type: github
-    endpoint: adityadevops
-    name: adityaldevops/dotnet
+    endpoint: aditya
+    name: dotnet
 
 trigger: 
 - master

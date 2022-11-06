@@ -11,6 +11,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+  buildPlatform: '64x'
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)

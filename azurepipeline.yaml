@@ -5,10 +5,10 @@
 # adityalella
 
 #repositories:
-- repository: dotnet 
-  endpoint: aditya 
-  name: adityaldevops/dotnet
-  type: github
+#- repository: dotnet 
+  #endpoint: aditya 
+  #name: adityaldevops/dotnet
+  #type: github
 
 trigger: master
 

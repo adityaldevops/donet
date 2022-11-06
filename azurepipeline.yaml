@@ -54,8 +54,8 @@ steps:
   inputs:
     CopyRoot: 'pipelines-dotnet-core.csproj'
     Contents: '**'
-    ArtifactName: 'Drop'
-    ArtifactType: 'Container'
+    ArtifactName: 'drop'
+    ArtifactType: 'FilePath'
 
 
 #- task: PublishCodeCoverageResults@1

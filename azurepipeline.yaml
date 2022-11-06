@@ -32,7 +32,7 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
-- bash: echo "dotnetpipeline runs after security-lib-ci completes" 
+- bash: echo "dotnetpipeline runs after adityaldevops.donet completes" 
 
 
 

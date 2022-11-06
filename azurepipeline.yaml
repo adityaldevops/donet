@@ -40,6 +40,15 @@ steps:
     vstsFeed: 'bc5ece9b-ef8c-4dc2-af71-2a3b10f9d14e'
     includeNuGetOrg: false
 
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: 'pipelines-dotnet-core.csproj'
+    
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
 
 
 #- task: PublishCodeCoverageResults@1

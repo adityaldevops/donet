@@ -14,10 +14,7 @@ resources:
     name: adityaldevops/donet
     endpoint: aditya
 
-  pipelines:
-  - pipeline: dotnetpipeline # Name of the pipeline resource.
-    source: adityaldevops.donet # The name of the pipeline referenced by this pipeline resource.
-    trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
+
 
 trigger: 
 - master
@@ -60,6 +57,21 @@ steps:
     PathtoPublish: '$(buildartifactstagingdirectory)'
     ArtifactName: 'drop'
 
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      Write-Host "Hello World"
+    
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.7'
+    architecture: 'x64'
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: "azurepipeline.yaml"
+  condition: succeededOrFailed()    
 
 
 #- task: PublishCodeCoverageResults@1

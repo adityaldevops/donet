@@ -68,7 +68,7 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFiles: "azurepipeline.yaml"
-  condition: succeededOrFailed()    
+  #condition: succeededOrFailed()    
 
 
 #- task: PublishCodeCoverageResults@1
